@@ -1,0 +1,9 @@
+[Unit]
+Description=Tegrastats data collection
+After=multi-user.target
+
+[Service]
+ExecStart=/bin/sh /etc/run_tegrastats.sh
+
+[Install]
+WantedBy=multi-user.target
